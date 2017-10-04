@@ -6,7 +6,7 @@ const request = supertest(config.host);
 describe('GitHub API', () => {
 
   describe('GET /users', () => {
-    it("should return the user information", (done) => {
+    it('should return the user information', (done) => {
       return request
         .get('/users/alopezsanchez')
         .expect(200)
@@ -34,7 +34,7 @@ describe('GitHub API', () => {
         });
     });
 
-    it("should return all the public repositories for the specified user", () => {
+    it('should return all the public repositories for the specified user', () => {
       return request
         .get('/users/alopezsanchez/repos')
         .expect(200)
@@ -45,15 +45,15 @@ describe('GitHub API', () => {
         });
     });
 
-    it("should return all the public all the public repositories for the specified user DESC", () => {
+    it('should return all the public all the public repositories for the specified user DESC', () => {
       return request
-      .get('/users/alopezsanchez/repos')
-      .query({ direction: 'desc' })
-      .expect(200)
-      .then(res => {
-        expect(res.body).toBeInstanceOf(Array);
-        expect(res.body[0].name).toEqual('vvs-practicatesting');
-      });
+        .get('/users/alopezsanchez/repos')
+        .query({ direction: 'desc' })
+        .expect(200)
+        .then(res => {
+          expect(res.body).toBeInstanceOf(Array);
+          expect(res.body[0].name).toEqual('vvs-practicatesting');
+        });
     });
 
     afterAll(() => {

@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Basic project structure to test APIs with Jest and Supertest",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint test/**"
   },
   "keywords": [
     "Testing",
@@ -14,6 +15,8 @@
   "author": "Corunet S.L. <corunet@corunet.com>",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^4.8.0",
+    "eslint-plugin-jest": "^21.2.0",
     "jest": "^21.2.1",
     "supertest": "^3.0.0"
   },

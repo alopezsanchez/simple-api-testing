@@ -19,6 +19,8 @@ La carpeta `fixtures` contiene cualquier archivo y configuración de utilidad pa
 
 La carpeta `test` contiene todos los archivos de test del proyecto. Para que Jest los detecte automáticamente, sin configuración alguna, el nombre de estos archivos deben terminan en `.test.js` o `.spec.js`.
 
+Se incluyen también archivos de configuración de [**ESLint**](https://eslint.org/) y [**editorconfig**](http://editorconfig.org/).
+
 
 ## Instrucciones de uso
 
@@ -34,9 +36,11 @@ $ npm test # Ejecuta Jest
 
 Para esto último, o bien se configura un *script* de NPM (https://docs.npmjs.com/misc/scripts) o se instala Jest de forma global con `(sudo) npm i -g jest`.
 
+
 ## Conclusiones
 
 Molaba que entre todos aportásemos y mejorásemos este *sample* con el fin de crear un generador en [Yeoman](http://yeoman.io/) o similar, y que la gente que tenga estas inquietudes pueda usarlo también.
+
 
 ## Algunos enlaces de interés
 
@@ -55,4 +59,4 @@ Molaba que entre todos aportásemos y mejorásemos este *sample* con el fin de c
 
 ## Nota
 
-La API pública de GitHub tiene un límite de peticiones por IP, por lo que en ocasiones los test pueden fallar al devolver éstas un 403.
+La API pública de GitHub tiene un límite de peticiones por IP, por lo que en ocasiones los test pueden fallar al devolver éstas un `403`.
