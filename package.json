@@ -1,0 +1,25 @@
+{
+  "name": "simple-api-testing",
+  "version": "0.1.0",
+  "description": "Basic project structure to test APIs with Jest and Supertest",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "Testing",
+    "Jest",
+    "Sample",
+    "Supertest"
+  ],
+  "author": "Corunet S.L. <corunet@corunet.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^21.2.1",
+    "supertest": "^3.0.0"
+  },
+  "jest": {
+    "setupFiles": [
+      "./fixtures/setup.js"
+    ]
+  }
+}
